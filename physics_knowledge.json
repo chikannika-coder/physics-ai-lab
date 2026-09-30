@@ -1,0 +1,583 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-09-30",
+  "equations": [
+    {
+      "id": "pendulum",
+      "name_th": "ลูกตุ้มอย่างง่าย",
+      "name_en": "Simple Pendulum",
+      "latex": "T = 2\\pi\\sqrt{\\frac{L}{g}}",
+      "formula": "T = 2*pi*sqrt(L/g)",
+      "variables": {
+        "T": "คาบ (s)",
+        "L": "ความยาว (m)",
+        "g": "9.81 m/s²"
+      },
+      "domain": [
+        "กลศาสตร์"
+      ],
+      "level": "ม.ปลาย",
+      "category": "mechanics"
+    },
+    {
+      "id": "projectile",
+      "name_th": "โพรเจกไทล์",
+      "name_en": "Projectile Motion",
+      "latex": "h = \\frac{v_0^2 \\sin^2\\theta}{2g}",
+      "formula": "h = v0**2 * sin(theta)**2 / (2*g)",
+      "variables": {
+        "h": "ความสูง (m)",
+        "v0": "ความเร็วต้น (m/s)",
+        "theta": "มุม (rad)"
+      },
+      "domain": [
+        "กลศาสตร์"
+      ],
+      "level": "ม.ปลาย",
+      "category": "mechanics"
+    },
+    {
+      "id": "ohm",
+      "name_th": "กฎของโอห์ม",
+      "name_en": "Ohm's Law",
+      "latex": "V = IR",
+      "formula": "V = I * R",
+      "variables": {
+        "V": "แรงดัน (V)",
+        "I": "กระแส (A)",
+        "R": "ความต้านทาน (Ω)"
+      },
+      "domain": [
+        "ไฟฟ้า"
+      ],
+      "level": "ม.ต้น",
+      "category": "electricity"
+    },
+    {
+      "id": "coulomb",
+      "name_th": "กฎของคูลอมบ์",
+      "name_en": "Coulomb's Law",
+      "latex": "F = k\\frac{q_1 q_2}{r^2}",
+      "formula": "F = k * q1 * q2 / r**2",
+      "variables": {
+        "F": "แรง (N)",
+        "k": "8.99e9",
+        "q1,q2": "ประจุ (C)",
+        "r": "ระยะ (m)"
+      },
+      "domain": [
+        "ไฟฟ้า"
+      ],
+      "level": "ม.ปลาย",
+      "category": "electricity"
+    },
+    {
+      "id": "hooke",
+      "name_th": "กฎของฮุก",
+      "name_en": "Hooke's Law",
+      "latex": "F = -kx",
+      "formula": "F = -k * x",
+      "variables": {
+        "F": "แรง (N)",
+        "k": "ค่าคงที่สปริง",
+        "x": "ระยะยืด (m)"
+      },
+      "domain": [
+        "กลศาสตร์"
+      ],
+      "level": "ม.ปลาย",
+      "category": "mechanics"
+    },
+    {
+      "id": "kinetic_energy",
+      "name_th": "พลังงานจลน์",
+      "name_en": "Kinetic Energy",
+      "latex": "KE = \\frac{1}{2}mv^2",
+      "formula": "KE = 0.5 * m * v**2",
+      "variables": {
+        "KE": "พลังงาน (J)",
+        "m": "มวล (kg)",
+        "v": "ความเร็ว (m/s)"
+      },
+      "domain": [
+        "กลศาสตร์"
+      ],
+      "level": "ม.ต้น",
+      "category": "mechanics"
+    },
+    {
+      "id": "heat_conduction",
+      "name_th": "การนำความร้อน",
+      "name_en": "Heat Conduction",
+      "latex": "Q = kA\\frac{\\Delta T}{L}",
+      "formula": "Q = k * A * dT / L",
+      "variables": {
+        "Q": "อัตรา (W)",
+        "k": "ค่าการนำ",
+        "A": "พื้นที่",
+        "dT": "ΔT",
+        "L": "ความหนา"
+      },
+      "domain": [
+        "อุณหพลศาสตร์"
+      ],
+      "level": "ม.ปลาย",
+      "category": "thermodynamics"
+    },
+    {
+      "id": "ideal_gas",
+      "name_th": "แก๊สอุดมคติ",
+      "name_en": "Ideal Gas Law",
+      "latex": "PV = nRT",
+      "formula": "P = n * R * T / V",
+      "variables": {
+        "P": "ความดัน (Pa)",
+        "V": "ปริมาตร",
+        "n": "โมล",
+        "R": "8.314",
+        "T": "อุณหภูมิ (K)"
+      },
+      "domain": [
+        "อุณหพลศาสตร์"
+      ],
+      "level": "ม.ปลาย",
+      "category": "thermodynamics"
+    },
+    {
+      "id": "wave_speed",
+      "name_th": "ความเร็วคลื่น",
+      "name_en": "Wave Speed",
+      "latex": "v = f\\lambda",
+      "formula": "v = f * lam",
+      "variables": {
+        "v": "ความเร็ว",
+        "f": "ความถี่",
+        "lam": "ความยาวคลื่น"
+      },
+      "domain": [
+        "คลื่น"
+      ],
+      "level": "ม.ต้น",
+      "category": "waves"
+    },
+    {
+      "id": "snell",
+      "name_th": "กฎของสเนลล์",
+      "name_en": "Snell's Law",
+      "latex": "n_1\\sin\\theta_1 = n_2\\sin\\theta_2",
+      "formula": "n1*sin(t1) = n2*sin(t2)",
+      "variables": {
+        "n1,n2": "ดัชนีหักเห",
+        "t1,t2": "มุม (rad)"
+      },
+      "domain": [
+        "แสง"
+      ],
+      "level": "ม.ปลาย",
+      "category": "optics"
+    },
+    {
+      "id": "stefan",
+      "name_th": "สเตฟาน-โบลต์ซมันน์",
+      "name_en": "Stefan-Boltzmann",
+      "latex": "P = \\sigma A T^4",
+      "formula": "P = sigma * A * T**4",
+      "variables": {
+        "P": "กำลัง (W)",
+        "sigma": "5.67e-8",
+        "A": "พื้นที่",
+        "T": "อุณหภูมิ (K)"
+      },
+      "domain": [
+        "อุณหพลศาสตร์"
+      ],
+      "level": "มหาวิทยาลัย",
+      "category": "thermodynamics"
+    },
+    {
+      "id": "rc_time",
+      "name_th": "เวลา RC",
+      "name_en": "RC Time Constant",
+      "latex": "\\tau = RC",
+      "formula": "tau = R * C",
+      "variables": {
+        "tau": "เวลา (s)",
+        "R": "ความต้านทาน",
+        "C": "ความจุ"
+      },
+      "domain": [
+        "ไฟฟ้า"
+      ],
+      "level": "มหาวิทยาลัย",
+      "category": "electricity"
+    },
+    {
+      "id": "einstein",
+      "name_th": "สมการไอน์สไตน์",
+      "name_en": "Mass-Energy Equivalence",
+      "latex": "E = mc^2",
+      "formula": "E = m * c**2",
+      "variables": {
+        "E": "พลังงาน (J)",
+        "m": "มวล (kg)",
+        "c": "3e8 m/s"
+      },
+      "domain": [
+        "สัมพัทธภาพ"
+      ],
+      "level": "มหาวิทยาลัย",
+      "category": "relativity"
+    },
+    {
+      "id": "new_eq",
+      "name_th": "สมการใหม่",
+      "name_en": "New Eq",
+      "latex": "E = mc^2",
+      "formula": "E = m * c**2",
+      "variables": {
+        "E": "พลังงาน"
+      },
+      "category": "mechanics",
+      "level": "ม.ต้น",
+      "domain": [
+        "mechanics"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-09-30",
+      "action": "created",
+      "version": "1.0.0"
+    },
+    {
+      "date": "2026-09-30 09:57",
+      "action": "added_equation",
+      "id": "new_eq"
+    },
+    {
+      "date": "2026-09-30 09:57",
+      "action": "added_equation",
+      "id": "new_eq"
+    },
+    {
+      "date": "2026-09-30 10:01",
+      "action": "added_equation",
+      "id": "new_eq"
+    }
+  ],
+  "discoveries": [
+    {
+      "date": "2026-09-30 08:22",
+      "results": [
+        {
+          "dataset": "pendulum",
+          "name": "ลูกตุ้ม",
+          "equation": "sqrt(x0 * 4.030056)",
+          "latex": "",
+          "r2": 0.9982618063791905,
+          "complexity": 4,
+          "features": [
+            "L"
+          ],
+          "target": "T"
+        },
+        {
+          "dataset": "projectile",
+          "name": "โพรเจกไทล์",
+          "equation": "square(x0 * 0.16007504)",
+          "latex": "",
+          "r2": 0.9938763473252544,
+          "complexity": 4,
+          "features": [
+            "v0"
+          ],
+          "target": "h"
+        },
+        {
+          "dataset": "ohm",
+          "name": "กฎโอห์ม",
+          "equation": "x0 * x1",
+          "latex": "",
+          "r2": 0.9999999977403461,
+          "complexity": 3,
+          "features": [
+            "I",
+            "R"
+          ],
+          "target": "V"
+        },
+        {
+          "dataset": "coulomb",
+          "name": "กฎคูลอมบ์",
+          "equation": "(x1 / square(x2 / -94815.58)) * x0",
+          "latex": "",
+          "r2": 0.9999999996136807,
+          "complexity": 8,
+          "features": [
+            "q1",
+            "q2",
+            "r"
+          ],
+          "target": "F"
+        },
+        {
+          "dataset": "hooke",
+          "name": "กฎฮุก",
+          "equation": "(-0.010654407 - x0) * x1",
+          "latex": "",
+          "r2": 0.9999942996572985,
+          "complexity": 5,
+          "features": [
+            "k",
+            "x"
+          ],
+          "target": "F"
+        },
+        {
+          "dataset": "kinetic_energy",
+          "name": "พลังงานจลน์",
+          "equation": "square(x1 * 0.7071065) * x0",
+          "latex": "",
+          "r2": 0.9999996504255758,
+          "complexity": 6,
+          "features": [
+            "m",
+            "v"
+          ],
+          "target": "KE"
+        },
+        {
+          "dataset": "heat_conduction",
+          "name": "การนำความร้อน",
+          "equation": "x0 / (x3 / (x2 * x1))",
+          "latex": "",
+          "r2": 0.9999999999998457,
+          "complexity": 7,
+          "features": [
+            "k",
+            "A",
+            "dT",
+            "L"
+          ],
+          "target": "Q"
+        },
+        {
+          "dataset": "ideal_gas",
+          "name": "แก๊สอุดมคติ",
+          "equation": "((x0 / 0.12027905) * x1) / x2",
+          "latex": "",
+          "r2": 0.9999999999984266,
+          "complexity": 7,
+          "features": [
+            "n",
+            "T",
+            "V"
+          ],
+          "target": "P"
+        },
+        {
+          "dataset": "wave_speed",
+          "name": "ความเร็วคลื่น",
+          "equation": "x1 * x0",
+          "latex": "",
+          "r2": 0.9999999434248336,
+          "complexity": 3,
+          "features": [
+            "f",
+            "lam"
+          ],
+          "target": "v"
+        },
+        {
+          "dataset": "rc_time",
+          "name": "เวลา RC",
+          "equation": "x1 * x0",
+          "latex": "",
+          "r2": 0.9999999999774826,
+          "complexity": 3,
+          "features": [
+            "R",
+            "C"
+          ],
+          "target": "tau"
+        },
+        {
+          "dataset": "stefan",
+          "name": "สเตฟาน-โบลต์ซมันน์",
+          "equation": "square(square(x1)) * (x0 * 5.6699996e-8)",
+          "latex": "",
+          "r2": 0.9999999998822372,
+          "complexity": 7,
+          "features": [
+            "A",
+            "T"
+          ],
+          "target": "P"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30 08:30",
+      "results": [
+        {
+          "dataset": "pendulum",
+          "name": "ลูกตุ้ม",
+          "equation": "sqrt(x0 * 4.030056)",
+          "latex": "",
+          "r2": 0.9982618063791905,
+          "complexity": 4,
+          "features": [
+            "L"
+          ],
+          "target": "T"
+        },
+        {
+          "dataset": "projectile",
+          "name": "โพรเจกไทล์",
+          "equation": "square(x0 * 0.16007504)",
+          "latex": "",
+          "r2": 0.9938763473252544,
+          "complexity": 4,
+          "features": [
+            "v0"
+          ],
+          "target": "h"
+        },
+        {
+          "dataset": "ohm",
+          "name": "กฎโอห์ม",
+          "equation": "x0 * x1",
+          "latex": "",
+          "r2": 0.9999999977403461,
+          "complexity": 3,
+          "features": [
+            "I",
+            "R"
+          ],
+          "target": "V"
+        },
+        {
+          "dataset": "coulomb",
+          "name": "กฎคูลอมบ์",
+          "equation": "(x1 / square(x2 / -94815.58)) * x0",
+          "latex": "",
+          "r2": 0.9999999996136807,
+          "complexity": 8,
+          "features": [
+            "q1",
+            "q2",
+            "r"
+          ],
+          "target": "F"
+        },
+        {
+          "dataset": "hooke",
+          "name": "กฎฮุก",
+          "equation": "(-0.010654407 - x0) * x1",
+          "latex": "",
+          "r2": 0.9999942996572985,
+          "complexity": 5,
+          "features": [
+            "k",
+            "x"
+          ],
+          "target": "F"
+        },
+        {
+          "dataset": "kinetic_energy",
+          "name": "พลังงานจลน์",
+          "equation": "square(x1 * 0.7071065) * x0",
+          "latex": "",
+          "r2": 0.9999996504255758,
+          "complexity": 6,
+          "features": [
+            "m",
+            "v"
+          ],
+          "target": "KE"
+        },
+        {
+          "dataset": "heat_conduction",
+          "name": "การนำความร้อน",
+          "equation": "x0 / (x3 / (x2 * x1))",
+          "latex": "",
+          "r2": 0.9999999999998457,
+          "complexity": 7,
+          "features": [
+            "k",
+            "A",
+            "dT",
+            "L"
+          ],
+          "target": "Q"
+        },
+        {
+          "dataset": "ideal_gas",
+          "name": "แก๊สอุดมคติ",
+          "equation": "((x0 / 0.12027905) * x1) / x2",
+          "latex": "",
+          "r2": 0.9999999999984266,
+          "complexity": 7,
+          "features": [
+            "n",
+            "T",
+            "V"
+          ],
+          "target": "P"
+        },
+        {
+          "dataset": "wave_speed",
+          "name": "ความเร็วคลื่น",
+          "equation": "x1 * x0",
+          "latex": "",
+          "r2": 0.9999999434248336,
+          "complexity": 3,
+          "features": [
+            "f",
+            "lam"
+          ],
+          "target": "v"
+        },
+        {
+          "dataset": "rc_time",
+          "name": "เวลา RC",
+          "equation": "x1 * x0",
+          "latex": "",
+          "r2": 0.9999999999774826,
+          "complexity": 3,
+          "features": [
+            "R",
+            "C"
+          ],
+          "target": "tau"
+        },
+        {
+          "dataset": "stefan",
+          "name": "สเตฟาน-โบลต์ซมันน์",
+          "equation": "square(square(x1)) * (x0 * 5.6699996e-8)",
+          "latex": "",
+          "r2": 0.9999999998822372,
+          "complexity": 7,
+          "features": [
+            "A",
+            "T"
+          ],
+          "target": "P"
+        }
+      ]
+    }
+  ],
+  "resources": [],
+  "devices": [
+    {
+      "id": "new_dev",
+      "name_th": "อุปกรณ์ใหม่",
+      "name_en": "New Device",
+      "category": "mechanics",
+      "principle": "",
+      "formula": "F = ma",
+      "real_use": ""
+    }
+  ]
+}
