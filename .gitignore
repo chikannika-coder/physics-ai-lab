@@ -23,3 +23,11 @@ uploads/
 # Large files
 *.zip
 *.mp4
+datasets/, *.zip 
+output/
+outputs/
+pinn_output/
+satiarm_output/
+New Text Document.txt
+*.txt
+!requirements.txt
